@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(121, 238, 199);
+}
+
+h1 {
+    text-align: center;
+}
+
+
+#dominoes-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#dominoes-list li {
+    list-style-type: none;
+    font-size: 2rem;
+    color: black;
+    transition: transform 100ms;
+}
+
+#dominoes-list li:hover {
+    transform: scale(1.5);
+    font-size: 2rem;
+    color: purple;
+}
+
+#dominoes-list .selected {
+    color: white;
+    filter: drop-shadow(0 0 0.25rem white);
+
+}
